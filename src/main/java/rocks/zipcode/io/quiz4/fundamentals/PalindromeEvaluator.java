@@ -9,6 +9,7 @@ public class PalindromeEvaluator {
     public static String[] getAllPalindromes(String string) {
         ArrayList<String> temporal = new ArrayList<>();
         String [] allSubs = StringEvaluator.getAllSubstrings(string);
+
         for(String str : allSubs) {
             if(PalindromeEvaluator.isPalindrome(str)) {
                 temporal.add(str);
