@@ -8,6 +8,7 @@ import java.util.function.Consumer;
  * @author leon on 11/12/2018.
  */
 public class SimpleStringGroup implements Iterable {
+
     private ArrayList<String> simpleStringGroup = new ArrayList<>();
 
     public SimpleStringGroup() {

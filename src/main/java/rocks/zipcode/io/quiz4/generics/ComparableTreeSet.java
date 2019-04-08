@@ -5,7 +5,7 @@ import java.util.TreeSet;
 /**
  * @author leon on 11/12/2018.
  */
-public class    ComparableTreeSet<_> implements Comparable<_>{
+public class    ComparableTreeSet<_> extends TreeSet implements Comparable<_> {
     private TreeSet<_> treeSet = new TreeSet<>();
     public ComparableTreeSet(_... arr) {
     }

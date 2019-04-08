@@ -14,9 +14,13 @@ public class SortedGroup<_> extends Group<_> implements Comparable<_>{
     private List<_> myList = new ArrayList<>();
 
     public SortedGroup() {
-//        myList.sort(Comparator.naturalOrder());
     }
 
+
+    public List<_> sorter(List myList) {
+    Collections.sort(myList);
+    return myList;
+    }
 
     @Override
     public void insert(_ value) {
@@ -33,7 +37,7 @@ public class SortedGroup<_> extends Group<_> implements Comparable<_>{
     }
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(_ o) {
         return 0;
     }
 }
