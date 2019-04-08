@@ -21,13 +21,20 @@ public class ZipCodeWilmington {
     }
 
     public void lecture(double numberOfHours) {
-        for(Student student : zipCodeWilmington) {
+        for (Student student : zipCodeWilmington) {
             student.learn(numberOfHours);
         }
     }
 
+    public void setStudyMap(Map studyMap) {
+        this.studyMap = studyMap;
+    }
+
     public Map<Student, Double> getStudyMap() {
 
-        return null;
+        for (Student student : zipCodeWilmington) {
+            studyMap.put(student, student.getTotalStudyTime());
+        }
+        return studyMap;
     }
 }
