@@ -5,7 +5,7 @@ import java.util.TreeSet;
 /**
  * @author leon on 11/12/2018.
  */
-public class    ComparableTreeSet<_> extends TreeSet implements Comparable<_> {
+public class    ComparableTreeSet<_> extends TreeSet implements Comparable{
     private TreeSet<_> treeSet = new TreeSet<>();
     public ComparableTreeSet(_... arr) {
     }
@@ -20,7 +20,7 @@ public class    ComparableTreeSet<_> extends TreeSet implements Comparable<_> {
     }
 
     @Override
-    public int compareTo(_ o) {
+    public int compareTo(Object o) {
         return 0;
     }
 }

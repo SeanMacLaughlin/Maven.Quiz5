@@ -31,10 +31,10 @@ public class ZipCodeWilmington {
     }
 
     public Map<Student, Double> getStudyMap() {
-
         for (Student student : zipCodeWilmington) {
             studyMap.put(student, student.getTotalStudyTime());
         }
         return studyMap;
     }
 }
+

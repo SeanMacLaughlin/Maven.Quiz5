@@ -12,7 +12,6 @@ public class SimpleStringGroup implements Iterable {
     private ArrayList<String> simpleStringGroup = new ArrayList<>();
 
     public SimpleStringGroup() {
-
     }
 
     public Integer count() {
@@ -40,12 +39,9 @@ public class SimpleStringGroup implements Iterable {
     }
 
     @Override
-    public Iterator iterator() {
-        return null;
+    public Iterator<String> iterator() {
+
+        return simpleStringGroup.iterator();
     }
 
-    @Override
-    public void forEach(Consumer action) {
-
-    }
 }
